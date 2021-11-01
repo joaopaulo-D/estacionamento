@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Estacionamento</title>
+        <link rel="stylesheet" href="style.css">  
+    </head>
+    <body>
+        <h2>Sistema de Estacionamento <i class="fas fa-car"></i></h2>
+        <div>
+            <input type="text" id="name" placeholder="Nome do veículo" autocomplete="off">
+            <input type="text" id="licence" placeholder="Placa do veículo" autocomplete="off">
+            <button id="send" class="success">Registrar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Veículo</th>
+                    <th>Placa</th>
+                    <th>Entrada</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="garage"></tbody>
+        </table>
+    </body>
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/51ba2077d4.js" crossorigin="anonymous"></script>
+</html>
