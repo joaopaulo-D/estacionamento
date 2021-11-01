@@ -19,9 +19,8 @@
             <td>${car.name}</td>
             <td>${car.licence}</td>
             <td data-time="${car.time}">
-                ${new Date(car.time)
-                        .toLocaleString('pt-BR', { 
-                            hour: 'numeric', minute: 'numeric' 
+                ${new Date(car.time).toLocaleString('pt-BR', { 
+                    hour: 'numeric', minute: 'numeric' 
                 })}
             </td>
             <td>
@@ -55,7 +54,7 @@
         const licence = $("#licence").value;
 
         if(!name || !licence){
-            alert("Os campos são obrigatórios.");
+            alert("Preecha os campos são obrigatorios :)");
             return;
         }   
 
